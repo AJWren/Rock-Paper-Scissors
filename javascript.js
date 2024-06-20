@@ -76,16 +76,16 @@ function playGame(){
         let humanChoice = getHumanChoice()
         let computerChoice = getComputerChoice()
         playRound(humanChoice, computerChoice)
-        console.log("Score: " + humanScore + " " + computerScore)
+        console.log("Score: " + humanScore + " - " + computerScore)
     }
     if (humanScore === computerScore){
-        console.log("It's a draw! Refresh the page to play again.")
+        console.log("It's a draw " + humanScore + " - " + computerScore + "! Refresh the page to play again.")
     }
     if (humanScore > computerScore){
-        console.log("Congratulations, you win! Refresh the page to play again.")
+        console.log("Congratulations, you win " + humanScore + " - " + computerScore + "! Refresh the page to play again.")
     }
     if (humanScore < computerScore){
-        console.log("Unlucky, the computer wins! Refresh the page to play again.")
+        console.log("Unlucky, the computer wins " + computerScore + " - " + humanScore + "! Refresh the page to play again.")
     }
 }
 
