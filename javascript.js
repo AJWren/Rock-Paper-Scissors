@@ -13,4 +13,23 @@ if (computerChoice >= 66){
 }
 }
 
+function getHumanChoice(){
+    let humanChoice = prompt("Do you want to play a game? Please choose; Rock, Paper or Scissors")
+    if (humanChoice === "Rock" || humanChoice === "rock"){
+        return ("Rock")
+    }
+    if (humanChoice === "Paper" || humanChoice === "paper"){
+        return ("Paper")
+    } 
+    if (humanChoice === "Scissors" || humanChoice === "scissors"){
+        return ("Scissors")
+    } 
+    else {
+        return "Please enter a valid move"
+    }
+}
+
+
+console.log(getHumanChoice())
+
 console.log(getComputerChoice())
