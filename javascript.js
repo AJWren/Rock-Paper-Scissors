@@ -15,13 +15,13 @@ if (computerChoice >= 66){
 
 function getHumanChoice(){
     let humanChoice = prompt("Do you want to play a game? Please choose; Rock, Paper or Scissors")
-    if (humanChoice === "Rock" || humanChoice === "rock"){
+    if (humanChoice.toUpperCase() === "ROCK"){
         return ("Rock")
     }
-    if (humanChoice === "Paper" || humanChoice === "paper"){
+    if (humanChoice.toUpperCase() === "PAPER"){
         return ("Paper")
     } 
-    if (humanChoice === "Scissors" || humanChoice === "scissors"){
+    if (humanChoice.toUpperCase() === "SCISSORS"){
         return ("Scissors")
     } 
     else {
